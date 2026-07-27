@@ -1,0 +1,74 @@
+{
+  "entities": {
+    "threads": {
+      "title": "ForumThread",
+      "description": "Forum threads and replies for Fifamaniakos community",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "author": { "type": "string" },
+        "authorRole": { "type": "string" },
+        "subsectionId": { "type": "string" },
+        "date": { "type": "string" },
+        "views": { "type": "number" },
+        "replies": { "type": "array" }
+      },
+      "required": ["title", "author", "subsectionId"]
+    },
+    "matches": {
+      "title": "MatchFixture",
+      "description": "Fixtures and reported scores",
+      "type": "object",
+      "properties": {
+        "homeTeam": { "type": "string" },
+        "awayTeam": { "type": "string" },
+        "homeScore": { "type": "number" },
+        "awayScore": { "type": "number" },
+        "status": { "type": "string" }
+      },
+      "required": ["homeTeam", "awayTeam", "status"]
+    },
+    "standings": {
+      "title": "TeamStanding",
+      "description": "League team standings",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "points": { "type": "number" },
+        "leagueId": { "type": "string" }
+      },
+      "required": ["name", "points", "leagueId"]
+    },
+    "transfers": {
+      "title": "TransferDeal",
+      "description": "Transfer market deals and offers",
+      "type": "object",
+      "properties": {
+        "player": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["player"]
+    },
+    "registrations": {
+      "title": "ManagerRegistration",
+      "description": "DT manager registrations",
+      "type": "object",
+      "properties": {
+        "managerName": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["managerName"]
+    },
+    "sanctions": {
+      "title": "SanctionReport",
+      "description": "Discipline sanctions",
+      "type": "object",
+      "properties": {
+        "manager": { "type": "string" },
+        "motive": { "type": "string" }
+      },
+      "required": ["manager"]
+    }
+  }
+}
