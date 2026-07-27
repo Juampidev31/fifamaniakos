@@ -1,0 +1,6 @@
+{
+  "name": "Fifamaniakos - Liga Virtual FC & FIFA",
+  "description": "Plataforma web para la comunidad Fifamaniakos: foros, ligas, torneos, mercado de pases, reglamento, fixture y tabla de posiciones en tiempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
